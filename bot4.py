@@ -1,9 +1,11 @@
+import os
+
 import telebot
 import time
 import schedule
 from datetime import date, timedelta, datetime
 
-BOT_TOKEN = '8087841013:AAHeFw8KDIELMPfND7T8zcBSMPq44h-Knsc'
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
 bot = telebot.TeleBot(BOT_TOKEN)
 
 START_DATE = date(2025, 2, 1)
