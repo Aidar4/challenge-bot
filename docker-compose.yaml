@@ -1,7 +1,10 @@
 version: '3'
 services:
   bot_schedule:
-    build: .
     image: 'bot_schedule'
+    build: .
+    command: python bot4.py
+    env_file:
+      - .env
     volumes:
     - .:/code
