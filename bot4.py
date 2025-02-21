@@ -2,7 +2,7 @@ import os
 
 import telebot
 import time
-import schedule
+# import schedule
 from datetime import date, timedelta, datetime
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
